@@ -1,13 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:paddingBottom="16dp"
+    android:background="#26ade0"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Make everyday decisions easier!"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+
+    <ImageView
+        android:id="@+id/image_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/message"
+        android:layout_alignStart="@+id/message"
+        android:layout_below="@+id/message"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/ball1" />
+
+    <Button
+        android:id="@+id/button_ask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_ball"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:background="#3F51B5"
+        android:text="ASK"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
 </RelativeLayout>
